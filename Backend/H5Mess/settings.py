@@ -131,8 +131,8 @@ STATIC_URL = "/static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # SSO APP KEYS
-CLIENT_ID = "OfOnByLltZ6pw5nn516slGrf34BaWtPpbDjZ15no"
-CLIENT_SECRET = "jqhEDOeP53i7IxBauENQ0zMgmo7towTbWIMLozB44ckJvU4NVyqANI5UM5tGgzvvozmY2gQVB0cxGOFA2DKhCitWjOquvngTTgF2NHFoJIZsLkw7dAMhCte4f31RZCZj"
+CLIENT_ID = "YDcbZXL05PnPgvRVf7MvrzYCE13mYlUhz8ABIFP6"
+CLIENT_SECRET = "VgrxOyFsKGYQ93x8a4tu1bOc7gxzkEhfbXU4YgRWkrym3GmS7br9ZzzBfqlGfDkDYnXoxLQqqV1qhgdJHOgeMhk63xx2epn4EM71kG8TyMX1d3qMtIipSeogYj6LD1Rw"
 REDIRECT_URI = "https://gymkhana.iitb.ac.in/~hostel5/"
 
 # SSO API URlS
