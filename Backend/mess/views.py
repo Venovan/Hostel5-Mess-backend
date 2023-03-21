@@ -39,7 +39,8 @@ def ping(request):
     return Response({"I am live."})
 
 def verify_student(rollNumber):
-    hostel = np.loadtxt(os.path.join(sys.path[0] + "\H5Students.csv"), delimiter=",", dtype=str)
+    print("PATH", os.path.join(sys.path[0] + "/mess/H5Students.csv"))
+    hostel = np.loadtxt(os.path.join(sys.path[0] + "/mess/H5Students.csv"), delimiter=",", dtype=str)
     if str(rollNumber) in hostel:
         return True
     else:
@@ -563,6 +564,7 @@ def day_summary_average(request):
 @api_view(['GET'])
 def day_details(request):
     rollNumber = request.headers.get("rollNumber")
+    print('roll_number', rollNumber)
     student = Student.objects.get(rollNumber=rollNumber)
     data = [x["date"] for x in Meal.objects.filter(
         student=student).values('date').distinct()]
